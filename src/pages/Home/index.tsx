@@ -46,7 +46,7 @@ const Index = () => {
   const deleteRecord = async (id: string) => {
     const data = await apiDeleteRecord(id);
     if (data.status === 0) {
-      message.success('删除成功');
+      message.success('删除成功!');
     } else {
       return message.error(data.text);
     }
